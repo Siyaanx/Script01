@@ -23,7 +23,7 @@ git commit -m "First ever commit"
 ## inserted repo name (by the user) and then initialization and commit with the commit message
 
 #To upload local repo to Github
-curl -u siyaanx
+curl -u Siyaanx
 https://api.github.com/user/repos -d {"name": "'"$repoName"'":, "private":false}
 
 ## Concl:This ask for private access token for the user (my github account) and here github api is used
