@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 repoName=$1
 repoName=$2
 repoName=$newfile
