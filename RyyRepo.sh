@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 repoName=$1
 repoName=$2
 repoName=$newfile
@@ -30,7 +30,7 @@ curl -u Siyaanx https://api.github.com/user/repos -d '{"name": "'"$repoName"'", 
 
 #Now to generate a remote url: this is going to be in form of declaring a new variable GIT_URL Aand use curl
 #and github api actions to get the remote Url of the new repo
-GIT_URL=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/siyaanx/"$repoName" | jq -r '.clone_url') 
+GIT_URL=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/Siyaanx/"$repoName" | jq -r '.clone_url') 
 
 ##Concl: -H sets the header of the request, and then passing the github api endpoint. With Piping using "|"
 ##the output of the LHS before | is passed as the input of the RHS of the |. And then, jq (a tool for reading)
