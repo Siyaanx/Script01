@@ -36,9 +36,9 @@ GIT_URL=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.co
 ##the output of the LHS before | is passed as the input of the RHS of the |. And then, jq (a tool for reading)
 ## json file is used to get the value of the .clone_url, that is the remote URL
 
-#Lastly, to rename the master branch on github, add the remote origin, and push our codes to Github
+#Lastly, to move by renaming branch to master branch on github, add the remote repo named origin01, and push our codes to Github (main branch)
 git branch -M  main
 git remote add origin01 $GIT_URL
 git push -u origin01 main
 
-##Concl: Renaming the branch as main branch, adding the remote origin and then pushing codes
+##Concl: Renaming branch to main forcefully, adding the remote repo origin01 and then pushing codes to main branch
