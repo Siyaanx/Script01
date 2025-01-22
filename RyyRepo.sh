@@ -38,7 +38,7 @@ GIT_URL=$(curl -H "Accept: application/vnd.github.v3+json" https://api.github.co
 
 #Lastly, to rename the master branch on github, add the remote origin, and push our codes to Github
 git branch -M  main
-git remote add origin $GIT_URL
-git push -u origin main
+git remote add origin01 $GIT_URL
+git push -u origin01 main
 
 ##Concl: Renaming the branch as main branch, adding the remote origin and then pushing codes
